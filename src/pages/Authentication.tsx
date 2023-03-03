@@ -4,7 +4,7 @@ import Head from 'next/head'
 import useAuth from '@/data/hook/useAuth'
 
 import {Box, Flex, Heading, Text, Checkbox, Button, Show, Image, useToast} from '@chakra-ui/react'
-import {HiOutlineMail, HiOutlineEye, HiOutlineLogin} from 'react-icons/hi'
+import {HiOutlineMail, HiOutlineUser, HiOutlineEye, HiOutlineLogin} from 'react-icons/hi'
 
 import AuthInput from '@/components/AuthInput'
 
@@ -89,7 +89,6 @@ export default function Authentication() {
                                     mandatory
                                     value={email}
                                     changeValue={setEmail} />
-
 
                                 <AuthInput 
                                     label="Senha"

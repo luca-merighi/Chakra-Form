@@ -9,7 +9,7 @@ import User from '@/model/User'
 interface AuthContextProps {
     user?: User,
     login?: (email: string, password: string) => Promise<void>,
-    register?: (email: string, name: string, password: string) => Promise<void>,
+    register?: (email: string, password: string) => Promise<void>,
     editUsername?: (username: string) => Promise<void>,
     editUserEmail?: (email: string) => Promise<void>,
     logout?: () => Promise<void>
